@@ -2,7 +2,39 @@
 
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+  .construction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    gap: 40px;
+  }
+
+  .construction-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* 📱 Mobile fix */
+  @media (max-width: 768px) {
+    .construction {
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .construction img {
+      max-width: 250px;
+    }
+
+    .construction-text {
+      align-items: center;
+    }
+  }
+</style>
+
         <title>Sanctuary of Forgotten Stars</title>
     </head>
 
@@ -38,9 +70,8 @@
 
             <tr>
                 <td>
-                   <div style="display: flex; padding: 80px; justify-content: space-between; align-content: center;">
-                  
-                    <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 100px;">
+                   <div class="construction">
+                    <div class="construction-text">
                         <span style="color: #1C4D8D; font-size: 40px; font-weight: bold;">OOPS! This page is still under construction (っ- ‸ - ς)</span>
                         <span style="color: #1C4D8D; font-size: 20px;">What do you hope to find here someday? ⋆｡ ﾟ☾ ﾟ｡ ⋆</span> <br>
                         <button style="width: 150px; background-color: #1C4D8D; color: white; border-radius: 10px; padding: 10px; cursor: pointer;" onclick="window.location.href='index.html'">Back to Home</button>
